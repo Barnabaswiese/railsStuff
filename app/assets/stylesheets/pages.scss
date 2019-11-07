@@ -1,0 +1,90 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body, html {
+    height: 100%;
+    background-color: #333;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/003/127/455/large/tomislav-jagnjic-001.jpg?1491958630");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    margin-bottom: 5rem;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+
+  
+  .introduction {
+    position: absolute;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 3rem 0 4rem 0;
+    margin: auto 5rem auto 7rem;
+    bottom: 5rem;
+  }
+  
+  .myWork {
+    position: absolute;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    right: 5rem;
+    bottom: 6rem;
+
+  }
+  
+  .myWork:hover {
+    background-color: black;
+  }
+    
+    .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: green;
+     color: white;
+     text-align: center;
+     padding: 0.5rem 0 0.5rem 0;
+  }
+  
