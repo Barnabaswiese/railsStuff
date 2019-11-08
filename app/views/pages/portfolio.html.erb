@@ -1,1 +1,126 @@
-portfolio
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+.portNav{
+    background-color: #4caf50;
+    color: white;
+}
+</style>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides slidefade">
+  <div class="numbertext">1 / 5</div>
+    <img class="slideImg" src="https://cdna.artstation.com/p/assets/images/images/008/430/072/large/tomislav-jagnjic-forest26-2.jpg?1513963771">
+  <div class="text">How do you mean you don't wanna go outside?</div>
+</div>
+
+<div class="mySlides slidefade">
+  <div class="numbertext">2 / 5</div>
+    <img class="slideImg" src="https://cdnb.artstation.com/p/assets/images/images/008/423/055/large/tomislav-jagnjic-nope-wrong-way-turn-around.jpg?1512661641">
+  <div class="text">nope, wrong way. turn around</div>
+</div>
+
+<div class="mySlides slidefade">
+  <div class="numbertext">3 / 5</div>
+    <img class="slideImg" src="https://cdnb.artstation.com/p/assets/images/images/008/079/677/large/tomislav-jagnjic-02-6.jpg?1529615946">
+  <div class="text">Concept art for a short indie film</div>
+</div>
+
+<div class="mySlides slidefade">
+  <div class="numbertext">4 / 5</div>
+    <img class="slideImg" src="https://cdna.artstation.com/p/assets/images/images/001/708/708/large/tomislav-jagnjic-ert-5.jpg?1459966387">
+  <div class="text">spirit_world</div>
+</div>
+
+<div class="mySlides slidefade">
+  <div class="numbertext">5 / 5</div>
+    <img class="slideImg" src="https://cdnb.artstation.com/p/assets/images/images/021/495/799/large/tomislav-jagnjic-finito-3.jpg?1571898311">
+  <div class="text">can't believe u forgot the scrolls, how am i supposed to resurrect the dragon now?</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span>  
+</div>
+
+<div class="grid-container">
+    <div class="grid-item">
+        <img class="gridImg" src="https://cdna.artstation.com/p/assets/images/images/008/054/084/large/tomislav-jagnjic-gaunt.jpg?1510168109">
+        <p class="gridText">
+            Nightgaunt
+        </p>
+    </div>
+    <div class="grid-item">
+        <img class="gridImg" src="https://cdna.artstation.com/p/assets/images/images/008/079/676/large/tomislav-jagnjic-01-6.jpg?1510331233">
+        <p class="gridText">
+            Green House - Concept for the place where Gaunt would hang out
+        </p>
+    </div>
+    <div class="grid-item">
+        <img class="gridImg" src="https://cdnb.artstation.com/p/assets/images/images/015/237/123/large/tomislav-jagnjic-journeyfinal.jpg?1547597754">
+        <p class="gridText">
+            Journey
+        </p>
+    </div>
+    <div class="grid-item">
+        <img class="gridImg" src="https://cdnb.artstation.com/p/assets/images/images/011/324/631/large/tomislav-jagnjic-skice.jpg?1528991194">
+        <p class="gridText">
+            Combination of all sketches for "Journey"
+        </p>
+    </div>  
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>  
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>  
+  </div>
+  
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n <= slides.length) {slideIndex = n}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
